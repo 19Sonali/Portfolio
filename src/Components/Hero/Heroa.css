@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* * .hero-container{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+} */
+
+
+.hero-container{
+    max-width: 1400px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 3.5%;
+    padding: 0rem 0;
+
+}
+
+
+.hero-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-content h3:nth-of-type(2){
+    margin-bottom: 1.5rem;
+}
+
+span{
+    color:#a993fe
+}
+
+.hero-content h1{
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 0.5;
+}
+
+.home-img img{
+    width:25vw;
+    /* animation: floatImage 4s ease-in-out infinite; */
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.hero-content p{
+    width: 80%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.social-media a{
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: .2rem solid #a993fe;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #a993fe;
+    margin: 2rem 1.5rem 2rem 0;
+    transition: -5s ease;
+}
+
+.social-media a:hover{
+    background: #a993fe;
+    color: #fff;
+    box-shadow: 0 0 1rem #a993fe;
+}
+
+.cv-btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background:  #a993fe;
+    border-radius: 3rem;
+    box-shadow: 0 0 1rem #a993fe;
+    font-size: 1.2rem;
+    color: #000;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: -5s ease;
+    text-decoration: none;
+
+}
+
+.cv-btn:hover{
+    box-shadow: none;
+}
+
