@@ -51,9 +51,9 @@ const Heroa = () => {
             Download Resume
           </a>
         </div>
-        <div className="home-img">
+        {/* <div className="home-img">
           <img src="./img/profile.png" alt="" />
-        </div>
+        </div> */}
       </section>
     </Element>
   );

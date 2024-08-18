@@ -59,10 +59,18 @@ export const WORK_EXPERIENCE = [
     },
     {
         title: "Front-End Development Intern at Edunet Foundation",
-        date: "June 2024 - July 2024 (Ongoing)",
+        date: "June 2024 - July 2024",
         responsibilites: [
             "Utilize front-end development tools and frameworks such as HTML, CSS, JavaScript, and React.",
         "Gain hands-on experience in web development, project management, and user interface design.",
+        ],
+
+    },
+    {
+        title: "Career Development Trainee, Pragati: Path to Future Program, Infosys SpringBoard",
+        date: "July 2024 - Ongoing",
+        responsibilites: [
+            "Currently participating in Pragati: Path to Future, an exclusive career development program for women by Infosys Springboard. This comprehensive 12-week hybrid program focuses on Digital skills, including Python, Java, and DBMS, AI basics, Professional development, Leadership skills and Industry knowledge. Engaging in both virtual learning and in-person sessions at Infosys campuses to enhance my skills and prepare for future career opportunities in the tech industry.",
         ],
 
     },

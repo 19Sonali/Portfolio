@@ -18,6 +18,9 @@
 
 } */
 
+
+
+
 .hero-container {
   max-width: 1400px;
   display: flex;
@@ -26,11 +29,13 @@
   margin: auto;
   margin-top: 3.5%;
   padding: 0rem 0;
+  width: 100%;
 }
 
 .hero-content h3 {
   font-size: 1.5rem;
   font-weight: 700;
+  
 }
 
 .hero-content h3:nth-of-type(2) {

@@ -18,4 +18,12 @@ body{
   color: #fff;
   background-color: #060417;
   max-width: 1700px;
+  margin:60px;
+  margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 10px !important; /* Use !important to ensure this rule takes precedence */
+  }
 }

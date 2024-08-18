@@ -3,6 +3,8 @@
     text-align: center;
     background: linear-gradient(90deg, #3d3072 0%, #423477 100%);
     padding: 1rem;
+    width: 100vw !important;
+    margin: 0px -100px -100px -100px !important;
 }
 
 .footer__social{
