@@ -8,6 +8,7 @@ import WorkExperience from './Components/WorkExperience/WorkExperience';
 import ContactMe from './Components/ContactMe/ContactMe';
 import Footer from './Components/Footer/Footer';
 import Router1 from './Router1';
+import Education from './Components/Education/Education';
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <div className="Container">
       <Heroa/>
       <Skills/>
+      {/* <Education/> */}
       <WorkExperience/>
       <ContactMe/>
    

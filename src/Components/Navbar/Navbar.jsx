@@ -39,6 +39,12 @@ export const Navbar = () => {
                     </li>
                     <li>
                     {/* <a className='menu-item'>Internships</a> */}
+                    <Link to="education" spy={true} smooth={true} duration={500} className='menu-item'>
+        Education
+      </Link>
+                    </li>
+                    <li>
+                    {/* <a className='menu-item'>Internships</a> */}
                     <Link to="internship" spy={true} smooth={true} duration={500} className='menu-item'>
         Internship
       </Link>

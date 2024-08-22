@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import Heroa from './Components/Hero/Heroa'
 import Skills from './Components/Skills/Skills'
 import WorkExperience from './Components/WorkExperience/WorkExperience'
+import Education from './Components/Education/Education'
 
 const NotFound = () => {
     return(
@@ -21,6 +22,7 @@ const Router1 = () => {
         <Route exact path='/Home' element={<Heroa/>}  />
         <Route exact path='/Skills' element={<Skills/>}/>
         <Route exact path='/Internships' element={<WorkExperience/>}/>
+        <Route exact path='/Education' element={<Education/>}/>
 
         <Route path="*" element={<Navigate to="/404" />} />
         <Route path="/404" element={<NotFound />} />        
