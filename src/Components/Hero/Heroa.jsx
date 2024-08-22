@@ -11,6 +11,7 @@ import { Element } from "react-scroll";
 const Heroa = () => {
   return (
     <Element name="home">
+      <section className="content">
       <section className="hero-container">
         <div className="hero-content">
           <h3>Hi, myself</h3>
@@ -54,6 +55,7 @@ const Heroa = () => {
         {/* <div className="home-img">
           <img src="./img/profile.png" alt="" />
         </div> */}
+      </section>
       </section>
     </Element>
   );

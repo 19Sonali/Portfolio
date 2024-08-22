@@ -20,10 +20,21 @@ body{
   max-width: 1700px;
   margin:60px;
   margin-top: 20px;
+  height: 100%;
 }
 
 @media (max-width: 375px) {
   body {
     margin: 10px !important; /* Use !important to ensure this rule takes precedence */
   }
+}
+
+.content{
+  
+  align-items: center;       /* Center items horizontally */
+  justify-content: center;   /* Center items vertically */
+  width: 100%;
+  min-height: 100vh;         /* Minimum height to fill the viewport */
+  padding: 20px;
+  box-sizing: border-box;
 }
