@@ -98,3 +98,17 @@ export const Education_details=[
 
     }
 ]
+
+export const Project_info=[
+    {
+        image: "./img/skillsphere.jpg",
+        title: "SkillSphere - Job Listing Website",
+        techstack: "ReactJS",
+        link: "https://github.com/19Sonali/SkillSphere",
+        description: "SkillSphere is a ReactJS-based job listing website designed for both job seekers and admins. Job seekers can easily browse and apply for jobs, while admins have a user-friendly interface to manage job postings. This streamlined approach ensures an efficient experience for both users and recruiters."
+        
+    },
+    
+    
+
+]

@@ -10,6 +10,7 @@ import Footer from './Components/Footer/Footer';
 import Router1 from './Router1';
 import Education from './Components/Education/Education';
 import {MantineProvider } from '@mantine/core';
+import Projects from './Components/Projects/Projects';
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Education/>
       </MantineProvider>
       <WorkExperience/>
+      <Projects/>
       <ContactMe/>
    
       
