@@ -9,6 +9,7 @@ import ContactMe from './Components/ContactMe/ContactMe';
 import Footer from './Components/Footer/Footer';
 import Router1 from './Router1';
 import Education from './Components/Education/Education';
+import {MantineProvider } from '@mantine/core';
 
 
 
@@ -24,7 +25,9 @@ function App() {
     <div className="Container">
       <Heroa/>
       <Skills/>
-      {/* <Education/> */}
+      <MantineProvider>
+      <Education/>
+      </MantineProvider>
       <WorkExperience/>
       <ContactMe/>
    

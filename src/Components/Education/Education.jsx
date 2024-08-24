@@ -1,110 +1,46 @@
-// import React from 'react'
-// import { Element } from 'react-scroll';
-// import './Education.css'
-// import Timeline from '@mui/lab/Timeline';
-// import TimelineItem from '@mui/lab/TimelineItem';
-// import TimelineSeparator from '@mui/lab/TimelineSeparator';
-// import TimelineConnector from '@mui/lab/TimelineConnector';
-// import TimelineContent from '@mui/lab/TimelineContent';
-// import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-// import TimelineDot from '@mui/lab/TimelineDot';
-// import FastfoodIcon from '@mui/icons-material/Fastfood';
-// import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-// import HotelIcon from '@mui/icons-material/Hotel';
-// import RepeatIcon from '@mui/icons-material/Repeat';
-// import Typography from '@mui/material/Typography';
+import React from 'react'
+import { Element } from 'react-scroll'
+import './Education.css'
+import { Timeline, Text } from '@mantine/core';
+import * as Icons from '@tabler/icons-react';
+import { Education_details } from '../../Utils/data'
 
+const TimelineItem = ({ items }) => {
+  return items.map((item, index) => (
+    <Timeline.Item 
+      key={index} 
+      bullet={<Icons.IconSchool color='#2a2252' size={20} />} 
+      >
+          <div className='education-card'>
+            <div className='education-details'>
+              <h1>{item.title}</h1>
+              <h2>{item.name}</h2>
+              <h2>{item.marks}</h2>
+              <h2>{item.year}</h2>
+            </div>
+            </div>    
+      
+    </Timeline.Item>
+  ));
+}
 
-// const Education = () => {
-//   return (
-//     <Element name="education">
-//     <section className='skills-container'>
-//         <h5>Education</h5>
-//         <div className='skills-content'>
-   
+const Education = () => {
+  return (
+    <Element name='education'>
+      
+      
+      
+    <section className='education-container'>
+    <h5 >Education</h5>
+        <div className='education-content'>
+        <Timeline color='#6852ba' active={3} bulletSize={35} lineWidth={4}>
+        <TimelineItem items={Education_details} />
+    </Timeline>
+          </div>
+          </section>
+          
+          </Element>
+  )
+}
 
-//     <Timeline position="alternate">
-//       <TimelineItem>
-//         <TimelineOppositeContent
-//           sx={{ m: 'auto 0' }}
-//           align="right"
-//           variant="body2"
-//           color="text.secondary"
-//         >
-//           9:30 am
-//         </TimelineOppositeContent>
-//         <TimelineSeparator>
-//           <TimelineConnector />
-//           <TimelineDot>
-//             <FastfoodIcon />
-//           </TimelineDot>
-//           <TimelineConnector />
-//         </TimelineSeparator>
-//         <TimelineContent sx={{ py: '12px', px: 2 }}>
-//           <Typography variant="h6" component="span">
-//             Eat
-//           </Typography>
-//           <Typography>Because you need strength</Typography>
-//         </TimelineContent>
-//       </TimelineItem>
-//       <TimelineItem>
-//         <TimelineOppositeContent
-//           sx={{ m: 'auto 0' }}
-//           variant="body2"
-//           color="text.secondary"
-//         >
-//           10:00 am
-//         </TimelineOppositeContent>
-//         <TimelineSeparator>
-//           <TimelineConnector />
-//           <TimelineDot color="primary">
-//             <LaptopMacIcon />
-//           </TimelineDot>
-//           <TimelineConnector />
-//         </TimelineSeparator>
-//         <TimelineContent sx={{ py: '12px', px: 2 }}>
-//           <Typography variant="h6" component="span">
-//             Code
-//           </Typography>
-//           <Typography>Because it&apos;s awesome!</Typography>
-//         </TimelineContent>
-//       </TimelineItem>
-//       <TimelineItem>
-//         <TimelineSeparator>
-//           <TimelineConnector />
-//           <TimelineDot color="primary" variant="outlined">
-//             <HotelIcon />
-//           </TimelineDot>
-//           <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-//         </TimelineSeparator>
-//         <TimelineContent sx={{ py: '12px', px: 2 }}>
-//           <Typography variant="h6" component="span">
-//             Sleep
-//           </Typography>
-//           <Typography>Because you need rest</Typography>
-//         </TimelineContent>
-//       </TimelineItem>
-//       <TimelineItem>
-//         <TimelineSeparator>
-//           <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-//           <TimelineDot color="secondary">
-//             <RepeatIcon />
-//           </TimelineDot>
-//           <TimelineConnector />
-//         </TimelineSeparator>
-//         <TimelineContent sx={{ py: '12px', px: 2 }}>
-//           <Typography variant="h6" component="span">
-//             Repeat
-//           </Typography>
-//           <Typography>Because this is the life you love!</Typography>
-//         </TimelineContent>
-//       </TimelineItem>
-//     </Timeline>
-  
-//             </div>
-//             </section>
-//     </Element>
-//   )
-// }
-
-// export default Education
+export default Education

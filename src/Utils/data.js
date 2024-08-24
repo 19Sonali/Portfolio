@@ -75,4 +75,26 @@ export const WORK_EXPERIENCE = [
 
     },
 
-];
+]
+
+export const Education_details=[
+    {
+        title: "B.E in Computer Science and Business Systems",
+        name: "St Joseph Engineering College",
+        year: "2021-2025",
+        marks: "8.6 cgpa"
+    },
+    {
+        title:"Pre University (12th grade)",
+        name: "St Aloysius PU College",
+        year: "2020-2021",
+        marks: "94%"
+    },
+    {
+        title: "SSLC",
+        name: "St Agnes CBSE School",
+        year: "2018-2019",
+        marks: "93%"
+
+    }
+]

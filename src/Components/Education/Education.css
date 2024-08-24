@@ -1,12 +1,19 @@
-.skills-container{
+.education-container{
     margin: 4rem 0;
     margin-left: 2rem;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  flex-direction: column;
+   min-height: 100vh; 
+   margin-top: 100px;
+    
     
 }
  
-.skills-container::after,
-.skills-container::before{
+.education-container::after,
+.education-container::before{
     content:" ";
     width: 28rem;
     height: 28rem;
@@ -16,29 +23,31 @@
     z-index: -1;
     filter: blur(200px);
 }
-.skills-container::after{
+.education-container::after{
     top: -3rem;
     left: -5rem;
 }
 
-.skills-container::before{
+.education-container::before{
     background: #9e51b9;
     bottom: 0rem;
     right: 0rem;
 }
 
-.skills-container h5{
+
+.education-container h5{
     font-size: 1.5rem;
     font-weight:600;
-    margin-bottom: 3.5rem;
-    margin: auto;
+    margin-bottom: 3rem;
+    margin-right:79rem;
     max-width: 1400px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
     
 }
 
-.skills-content{
+.education-content{
     display: flex;
     align-items: flex-start;
     gap: 3rem;
@@ -47,3 +56,50 @@
     justify-content: space-between;
     margin: auto;
 }
+
+.education-card{
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(20, 16, 43, 0.398);
+    backdrop-filter: blur(0.8rem);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin:20px;
+    margin-bottom: 40px;
+        height: 200px;
+        width: 60vw;
+
+}
+.education-card:hover,
+.education-card.active{
+    background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+}
+
+.education-card span{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.education-card:hover h2,
+.education-card.active h2{
+    color: #ffffff;
+}
+
+.education-details h1{
+    color: #ffffff;
+    font-size:18px ;
+    font-weight: 100px;
+    align-content: flex-start!;
+    margin-top: 2px;
+}
+
+.education-details h2{
+    color: #6751b9 ;
+    font-size:16px ;
+    font-weight: 100px;
+    padding: -100px;
+}
+
