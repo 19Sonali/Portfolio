@@ -13,6 +13,8 @@ const WorkExperience = () => {
     dots:false,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    cssEase: "linear",
     slidesToShow:2,
     slidesToScroll:1,
     arrows:false,
