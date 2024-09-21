@@ -22,7 +22,7 @@ const Heroa = () => {
           <p>
             A Computer Science and Business Systems student from St Joseph
             Engineering College.With a keen interest in web development, I am
-            passionate about creating dynamic and user-friendly websites.
+            passionate about creating responsive and user-friendly websites.
           </p>
           <div className="social-media">
             <a
