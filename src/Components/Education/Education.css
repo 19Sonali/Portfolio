@@ -1,20 +1,18 @@
-.education-container{
+.education-container {
     margin: 4rem 0;
     margin-left: 2rem;
     position: relative;
     justify-content: center;
     align-items: center;
     display: flex;
-  flex-direction: column;
-   min-height: 100vh; 
-   margin-top: 100px;
-    
-    
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 100px;
 }
- 
+
 .education-container::after,
-.education-container::before{
-    content:" ";
+.education-container::before {
+    content: " ";
     width: 28rem;
     height: 28rem;
     border-radius: 28.125rem;
@@ -23,41 +21,30 @@
     z-index: -1;
     filter: blur(200px);
 }
-.education-container::after{
+
+.education-container::after {
     top: -3rem;
     left: -5rem;
 }
 
-.education-container::before{
+.education-container::before {
     background: #9e51b9;
     bottom: 0rem;
     right: 0rem;
 }
 
-
-.education-container h5{
+.education-container h5 {
     font-size: 1.5rem;
-    font-weight:600;
+    font-weight: 600;
     margin-bottom: 3rem;
-    margin-right:79rem;
+    /* Remove large margin-right for mobile */
+    margin-right: auto;
     max-width: 1400px;
     padding-top: 20px;
     padding-bottom: 20px;
-    
-    
 }
 
-.education-content{
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 1400px;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.education-card{
+.education-card {
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
     padding: 2rem;
@@ -67,39 +54,90 @@
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin:20px;
+    margin: 20px;
     margin-bottom: 40px;
-        height: 200px;
-        width: 60vw;
-
+    height: auto; /* Changed from fixed height */
+    max-width: 100%; /* Prevents exceeding viewport */
+    width: 90%; /* Responsive width */
 }
+
+.education-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 100%; /* Ensure it doesn't exceed width */
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin: auto;
+}
+
 .education-card:hover,
-.education-card.active{
+.education-card.active {
     background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
 }
 
-.education-card span{
+.education-card span {
     font-size: 1.3rem;
     font-weight: 600;
 }
 
 .education-card:hover h2,
-.education-card.active h2{
+.education-card.active h2 {
     color: #ffffff;
 }
 
-.education-details h1{
+.education-details h1 {
     color: #ffffff;
-    font-size:18px ;
+    font-size: 18px;
     font-weight: 100px;
-    align-content: flex-start!;
+    align-content: flex-start;
     margin-top: 2px;
 }
 
-.education-details h2{
-    color: #6751b9 ;
-    font-size:16px ;
+.education-details h2 {
+    color: #6751b9;
+    font-size: 16px;
     font-weight: 100px;
     padding: -100px;
 }
 
+/* Media Queries for mobile view */
+@media (max-width: 600px) {
+    .education-container h5 {
+        font-size: 24px;
+        /* Set margin to auto for better alignment */
+        margin-right: auto;
+        margin-left: 1rem;
+        font-weight: 600;
+    }
+
+    .education-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .education-card {
+        width: 90vw;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .education-details h1 {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .education-details h2 {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .mantine-Timeline-line {
+        display: none; /* Hide the line */
+    }
+
+    .education-card {
+        width: 90%; /* Responsive width for cards */
+        margin: 10px 0; /* Adjust margins for smaller screens */
+    }
+}

@@ -18,10 +18,13 @@ code {
 body {
   color: #fff;
   background-color: #060417;
-  max-width: 1700px;
+  max-width: 100vw;
   margin: 60px;
   margin-top: 20px;
   height: 100%;
+  margin: 0;      
+    padding: 0;       
+    overflow-x: hidden;
 }
 
 @media (max-width: 375px) {

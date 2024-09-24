@@ -1,4 +1,4 @@
-.skills-card{
+.skills-card {
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
     padding: 2.5rem;
@@ -8,26 +8,25 @@
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0 1rem; /* Added horizontal margins for spacing */
 }
 
 .skills-card:hover,
-.skills-card.active{
+.skills-card.active {
     background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
 }
 
-.skills-card span{
+.skills-card span {
     font-size: 1.3rem;
     font-weight: 600;
 }
 
 .skills-card:hover span,
-.skills-card.active span{
+.skills-card.active span {
     color: white;
 }
 
-
-
-.skill-icon{
+.skill-icon {
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -41,30 +40,45 @@
     left: -1rem;
 }
 
-.skill-icon img{
+.skill-icon img {
     width: 2.4rem;
     height: auto;
     object-fit: contain;
 }
 
-@media (max-width: 1025px){
-    .skills-card{
+/* Adjustments for responsive design */
+@media (max-width: 1025px) {
+    .skills-card {
         padding: 2rem;
     }
-    .skills-card span{
+    .skills-card span {
         font-size: 1rem;
     }
-    .skill-icon{
+    .skill-icon {
         width: 3rem;
         height: 3rem;
     }
-    .skill-icon img{
+    .skill-icon img {
         width: 1.8rem;
     }
 }
 
-@media (max-width: 768px){
-    .skills-card span{
+@media (max-width: 768px) {
+    .skills-card span {
         font-size: 0.9rem;
+    }
+
+    .skills-card {
+        margin: 1rem 0; /* Reduce margin for smaller screens */
+        width: calc(100% - 2rem); /* Full width minus margins */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-card {
+        padding: 1.5rem; 
+    }
+    .skills-card span {
+        font-size: 0.8rem; 
     }
 }

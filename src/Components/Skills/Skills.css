@@ -1,6 +1,6 @@
 .skills-container{
     margin: 4rem 0;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     position: relative;
     margin-top: -100px;
     
@@ -92,6 +92,10 @@
         width: 18rem;
         height: 18rem;
     }
+    .skills-container h5{
+        margin-top: 50px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -99,5 +103,7 @@
         padding: 0;
     }
     
-    
+    .skills-container h5{
+        margin-top: 50px;
+    }
 }
