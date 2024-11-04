@@ -110,4 +110,12 @@ export const Project_info = [
     description:
       "SkillSphere is a ReactJS-based job listing website designed for both job seekers and admins. Job seekers can easily browse and apply for jobs, while admins have a user-friendly interface to manage job postings. This streamlined approach ensures an efficient experience for both users and recruiters.",
   },
+  {
+    "image": "./img/homequest.png",
+    "title": "HomeQuest - Real Estate Platform",
+    "techstack": "Vite, SCSS, ReactJS",
+    "link": "https://github.com/19Sonali/HomeQuest",
+    "description":
+      "HomeQuest is a front-end real estate platform built with Vite, SCSS, and ReactJS. It offers users an intuitive interface to explore property listings and view detailed property information. "
+}
 ];

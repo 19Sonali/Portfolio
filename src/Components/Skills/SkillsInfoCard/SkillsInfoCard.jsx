@@ -2,8 +2,8 @@ import React from 'react'
 import './SkillsInfoCard.css'
 
 const SkillsInfoCard = ({heading, skills}) => {
-  console.log('heading: ', heading)
-  console.log('Skills: ', skills)
+  // console.log('heading: ', heading)
+  // console.log('Skills: ', skills)
   return(
 
   <div className='skills-info-card'>

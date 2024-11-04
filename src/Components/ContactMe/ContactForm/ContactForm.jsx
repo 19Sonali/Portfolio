@@ -11,11 +11,11 @@ const ContactForm = () => {
 
     emailjs.sendForm('service_zrp1ym3', 'template_5nayelu', form.current, 'UU68NvludAc3jkojn')
       .then((result) => {
-        console.log('Email sent successfully:', result.text);
+        // console.log('Email sent successfully:', result.text);
         setMessage('Message Sent Successfully!'); 
         e.target.reset();  
       }, (error) => {
-        console.error('Failed to send email:', error.text);
+        // console.error('Failed to send email:', error.text);
         setMessage('Failed to send message!');  
       });
   };

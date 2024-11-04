@@ -41,7 +41,7 @@
     top: 0.35rem;
 }
 
-@media (max-width){
+@media (max-width: 600px){
     .work-experience-card{
         margin: 0;
     }
@@ -53,5 +53,15 @@
     .work-experience-card ul li{
         font-size: 0.75rem;
     }
+}
+
+@media (max-width: 600px){
+.work-experience-card ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
 }
 
